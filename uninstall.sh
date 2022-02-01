@@ -1,3 +1,6 @@
+#!/bin/sh
+
+set -e
 
 if brew --help &> /dev/null
 then
@@ -10,3 +13,5 @@ then
 	echo "Uninstalling OhMyZsh..."
 	sh ~/.oh-my-zsh/tools/uninstall.sh
 fi
+
+[ -e ~/.dotfiles ] && rm -r ~/.dotfiles

@@ -1,3 +1,5 @@
+#!/bin/sh
+
 set -e
 
 DOTFILES_SOURCE_PATH="$(cd $(dirname $0); pwd)"
@@ -5,7 +7,7 @@ echo "Installing dotfiles from $DOTFILES_SOURCE_PATH"
 
 DOTFILES=~/.dotfiles
 
-if [ "$DOTFILES_SOURCE_PATH" != "$DOTFILES" ]
+if [ "$DOTFILES_SOURCE_PATH" != "$DOTFILES" ] && [ ! -e ~/.dotfiles ]
 then
 	ln -s "$DOTFILES_SOURCE_PATH" "$DOTFILES"
 fi
