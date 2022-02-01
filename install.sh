@@ -40,7 +40,6 @@ then
 fi
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
-echo $HOMEBREW_BUNDLE_FILE
 brew bundle
 
 
@@ -84,3 +83,18 @@ then
 	echo "Setting up git config"
 	echo "[include]\n\tpath = $PRIVATE_PATH/gitconfig/main.gitconfig" > ~/.gitconfig
 fi
+
+echo "Setting up Vim"
+ln -sf $DOTFILES/vim ~/.vim
+
+
+echo "+-------------------------------------------------------------------------+"
+echo "|                                                                         |"
+echo "| Next the Nord theme will be installed for the Terminal in a new window. |"
+echo "|      Please press Command+, and then set the theme as the default.      |"
+echo "|                                                                         |"
+echo "|                     Press return to continue...                         |"
+echo "|                                                                         |"
+echo "+-------------------------------------------------------------------------+"
+read -n 1
+open $DOTFILES/nord.terminal

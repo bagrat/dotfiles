@@ -14,6 +14,7 @@ then
 	sh ~/.oh-my-zsh/tools/uninstall.sh
 fi
 
+sudo rm -f ~/.vim
 sudo rm -rf ~/.ssh/id_rsa*
 rm -f ~/.gitconfig
 
