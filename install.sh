@@ -64,7 +64,9 @@ if [ ! -z "$PRIVATE_PATH" ]
 then
 	echo "Setting up SSH"
 	mkdir -p ~/.ssh
+	THIS_USER=$USER
 	sudo cp $PRIVATE_PATH/ssh/id_rsa* ~/.ssh/
+	sudo chown -R $THIS_USER ~/.ssh
 	sudo chmod 400 ~/.ssh/id_rsa*
 
 	echo "Setting up git config"
