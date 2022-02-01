@@ -9,7 +9,7 @@ DOTFILES=~/.dotfiles
 
 if [ "$DOTFILES_SOURCE_PATH" != "$DOTFILES" ] && [ ! -e ~/.dotfiles ]
 then
-	ln -s "$DOTFILES_SOURCE_PATH" "$DOTFILES"
+	ln -sfh "$DOTFILES_SOURCE_PATH" "$DOTFILES"
 fi
 
 
@@ -45,9 +45,9 @@ brew bundle
 
 if [ -z "$PRIVATE_PATH" ]
 then
-	read -n 1 -p "Do you want to configure private stuff? [y/n] " YES
+	read -n 1 -p "Do you want to configure private stuff? [y/n] " REPLY
 	echo
-	if [ "$YES" == "y" ]
+	if [ "$REPLY" == "y" ]
 	then
 		read -p "Enter the private path relative to home ($HOME): " PRIVATE_PATH_INPUT
 		PRIVATE_PATH="${HOME}/${PRIVATE_PATH_INPUT}"
@@ -85,7 +85,7 @@ then
 fi
 
 echo "Setting up Vim"
-ln -sf $DOTFILES/vim ~/.vim
+ln -sfhi $DOTFILES/vim ~/.vim
 
 
 echo "+-------------------------------------------------------------------------+"
