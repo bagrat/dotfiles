@@ -1,4 +1,8 @@
 *.swp
+
 Brewfile.lock.json
+
 vim/autoload/plug.vim
 vim/plugged
+
+tmux/plugins
