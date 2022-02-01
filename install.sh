@@ -69,14 +69,14 @@ then
 	sudo chown -R $THIS_USER ~/.ssh
 	sudo chmod 400 ~/.ssh/id_rsa*
 
-	cd ~/.dotfiles
-	if git remote -v | grep https
+	cd ~/.dotfiles > /dev/null
+	if git remote -v | grep https > /dev/null
 	then
 		echo "Changing .dotfiles repo origin to Git"
 		git remote remove origin
 		git remote add origin git@github.com:bagrat/dotfiles.git
 	fi
-	cd -
+	cd - > /dev/null
 
 	echo "Setting up git config"
 	echo "[include]\n\tpath = $PRIVATE_PATH/gitconfig/main.gitconfig" > ~/.gitconfig
