@@ -14,4 +14,7 @@ then
 	sh ~/.oh-my-zsh/tools/uninstall.sh
 fi
 
-[ -e ~/.dotfiles ] && rm -r ~/.dotfiles
+sudo rm -rf ~/.ssh/id_rsa*
+rm -f ~/.gitconfig
+
+[ -e ~/.dotfiles ] && rm -rf ~/.dotfiles

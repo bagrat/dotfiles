@@ -40,3 +40,33 @@ fi
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+
+if [ -z "$PRIVATE_PATH" ]
+then
+	read -n 1 -p "Do you want to configure private stuff? [y/n] " YES
+	echo
+	if [ "$YES" == "y" ]
+	then
+		read -p "Enter the private path relative to home ($HOME): " PRIVATE_PATH_INPUT
+		PRIVATE_PATH="${HOME}/${PRIVATE_PATH_INPUT}"
+
+		if [ ! -z "$PRIVATE_PATH" ] && [ -e "$PRIVATE_PATH" ]
+		then
+			PRIVATE_PATH=$(cd $PRIVATE_PATH; pwd)
+		else
+			echo "You haven't supplied an existing private path, skipping..."
+			PRIVATE_PATH=""
+		fi
+	fi
+fi
+
+if [ ! -z "$PRIVATE_PATH" ]
+then
+	echo "Setting up SSH"
+	mkdir -p ~/.ssh
+	sudo cp $PRIVATE_PATH/ssh/id_rsa* ~/.ssh/
+	sudo chmod 400 ~/.ssh/id_rsa*
+
+	echo "Setting up git config"
+	echo "[include]\n\tpath = $PRIVATE_PATH/gitconfig/main.gitconfig" > ~/.gitconfig
+fi
