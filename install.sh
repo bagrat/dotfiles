@@ -31,6 +31,7 @@ BAK_FILE="${ZSHRC_PATH}${BAK_EXT}"
 sed -i $BAK_EXT 's/^# ZSH_CUSTOM=.*/ZSH_CUSTOM=~\/\.dotfiles\/zsh/' $ZSHRC_PATH
 [ -f "$BAK_FILE" ] && rm $BAK_FILE
 
+export HOMEBREW_BUNDLE_FILE=$DOTFILES/Brewfile
 
 if ! brew --help &> /dev/null
 then
@@ -39,6 +40,8 @@ then
 fi
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+echo $HOMEBREW_BUNDLE_FILE
+brew bundle
 
 
 if [ -z "$PRIVATE_PATH" ]
