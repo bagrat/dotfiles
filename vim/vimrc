@@ -13,4 +13,17 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'arcticicestudio/nord-vim'
 
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'christoomey/vim-tmux-navigator'
+
+Plug 'scrooloose/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 call plug#end()
+
+for f in split(glob('~/.vim/config/*.vim'), '\n')
+    execute 'source' f
+endfor
