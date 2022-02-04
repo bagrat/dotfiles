@@ -11,6 +11,8 @@ brew "tree"
 brew "helm"
 brew "ansible"
 brew "poetry"
+brew "python@3.8"
+brew "rust"
 
 tap "homebrew/cask-fonts"
 cask "font-fira-code"
