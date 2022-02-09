@@ -1,6 +1,8 @@
 *.swp
 *.swo
 
+zsh/plugins
+
 Brewfile.lock.json
 
 vim/autoload/plug.vim
@@ -8,3 +10,5 @@ vim/plugged
 vim/.netrwhist
 
 tmux/plugins
+
+coc
