@@ -13,6 +13,7 @@ brew "ansible"
 brew "poetry"
 brew "python@3.8"
 brew "rust"
+brew "elixir"
 
 tap "homebrew/cask-fonts"
 cask "font-fira-code"
@@ -23,3 +24,10 @@ cask "docker"
 cask "google-chrome"
 cask "slack"
 cask "zoom"
+cask "postico"
+
+
+brew "lightgbm"
+brew "postgresql"
+brew "cmake"
+brew "protobuf"
