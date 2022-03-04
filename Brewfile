@@ -25,6 +25,7 @@ cask "google-chrome"
 cask "slack"
 cask "zoom"
 cask "postico"
+cask "discord"
 
 
 brew "lightgbm"

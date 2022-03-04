@@ -56,3 +56,7 @@ if &diff
     noremap <cr> ]c
     noremap \ [c
 endif
+
+nmap <leader>/ gcc
+vmap <leader>/ gc
+

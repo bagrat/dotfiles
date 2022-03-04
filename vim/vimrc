@@ -30,7 +30,11 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'airblade/vim-gitgutter'
 
+Plug 'tpope/vim-commentary'
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'elixir-editors/vim-elixir'
 
 call plug#end()
 

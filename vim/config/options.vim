@@ -9,6 +9,8 @@ set autoread
 set cryptmethod="blowfish2"
 set noswapfile
 set viminfo=""
+set synmaxcol=100000
+syntax sync minlines=100000
 
 " UI
 set splitbelow
@@ -20,7 +22,6 @@ set noshowcmd
 set noshowmode
 set nomodeline
 set number
-set synmaxcol=200
 set cursorline
 set splitbelow
 set splitright
