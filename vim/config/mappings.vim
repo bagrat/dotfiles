@@ -60,3 +60,4 @@ endif
 nmap <leader>/ gcc
 vmap <leader>/ gc
 
+let vim_markdown_preview_hotkey = '<leader>m'

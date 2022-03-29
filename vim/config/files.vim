@@ -18,9 +18,9 @@ let g:NERDTreeFileExtensionHighlightFullName = 1
 let g:NERDTreeExactMatchHighlightFullName = 1
 let g:NERDTreePatternMatchHighlightFullName = 1
 
-noremap <C-p> :Files<CR>
-noremap <S-Tab> :Buffers<CR>
-noremap <C-f> :Rg<CR>
+nmap <C-p> :Files<CR>
+nmap <S-Tab> :Buffers<CR>
+nmap <C-f> :Rg<CR>
 
 map <leader><Tab> :bp\|bw #<CR>
 map <leader><S-Tab> :bp\|bw! #<CR>

@@ -8,6 +8,7 @@ Brewfile.lock.json
 vim/autoload/plug.vim
 vim/plugged
 vim/.netrwhist
+vim/view/
 
 tmux/plugins
 

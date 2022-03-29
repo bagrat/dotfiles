@@ -14,6 +14,7 @@ brew "poetry"
 brew "python@3.8"
 brew "rust"
 brew "elixir"
+brew "markdown"
 
 tap "homebrew/cask-fonts"
 cask "font-fira-code"
