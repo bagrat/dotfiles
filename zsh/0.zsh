@@ -4,3 +4,5 @@ export DOTFILES=~/.dotfiles
 export XDG_CONFIG_HOME=$DOTFILES
 
 export ZSH_THEME="avit"
+
+export PATH=~/.bin:$PATH
