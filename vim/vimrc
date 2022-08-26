@@ -31,6 +31,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'airblade/vim-gitgutter'
 
 Plug 'tpope/vim-commentary'
+Plug 'suy/vim-context-commentstring'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -38,6 +39,14 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'mhinz/vim-mix-format'
 
 Plug 'JamshedVesuna/vim-markdown-preview'
+
+Plug 'mattn/emmet-vim'
+Plug 'posva/vim-vue'
+Plug 'yaegassy/coc-volar', {'do': 'yarn install --frozen-lockfile'}
+Plug 'yuezk/vim-js'
+
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 
 call plug#end()
 

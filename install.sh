@@ -24,6 +24,7 @@ then
 fi
 
 
+
 echo "Configuring custom zsh files..."
 ZSHRC_PATH=~/.zshrc
 BAK_EXT='.bak'

@@ -61,3 +61,5 @@ nmap <leader>/ gcc
 vmap <leader>/ gc
 
 let vim_markdown_preview_hotkey = '<leader>m'
+
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"

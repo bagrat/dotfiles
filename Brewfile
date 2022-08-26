@@ -20,6 +20,8 @@ brew "tfenv"
 brew "yarn"
 brew "jq"
 brew "yq"
+brew "gifsicle"
+brew "imagemagick"
 
 tap "homebrew/cask-fonts"
 cask "font-fira-code"
