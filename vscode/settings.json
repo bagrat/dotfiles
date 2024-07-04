@@ -1,0 +1,66 @@
+{
+  "vim.useSystemClipboard": true,
+  "diffEditor.renderSideBySide": false,
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "'Fira Code'",
+  "editor.fontLigatures": true,
+  "editor.codeLensFontFamily": "Fira Mono",
+  "terminal.integrated.scrollback": 999999,
+  "git.enableSmartCommit": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "hediet.vscode-drawio.resizeImages": null,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.accessibilitySupport": "off",
+  "githubPullRequests.pullBranch": "never",
+  "jest.autoRun": "off",
+  "jest.nodeEnv": {},
+  "jest.monitorLongRun": "off",
+  "jest.pathToConfig": "jest.config.js --verbose",
+  "eslint.execArgv": [
+    "--max-old-space-size=16384"
+  ],
+  // "eslint.codeActionsOnSave.rules": null,
+  "git.openRepositoryInParentFolders": "never",
+  "editor.inlineSuggest.enabled": true,
+  "elixirLS.enableTestLenses": true,
+  "jest.jestCommandLine": "./node_modules/.bin/jest",
+  "workbench.colorTheme": "Nord",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "tailwindCSS.includeLanguages": {
+    "elixir": "html",
+    "phoenix-heex": "html"
+  },
+  "emmet.includeLanguages": {
+    "phoenix-heex": "html"
+  },
+  "debug.toolBarLocation": "commandCenter",
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.autoIndent": "full",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "elixirLS.suggestSpecs": false,
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "workbench.editor.showTabs": "single",
+  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+  "lldb.launch.expressions": "native",
+  "github.copilot.editor.enableAutoCompletions": true
+  // "prettier.requireConfig": true
+  // "[phoenix-heex]": {
+  //     "editor.defaultFormatter": "RoyalMist.vscode-eex-format"
+  // },
+  // "tailwindCSS.includeLanguages": {
+  //     "phoenix-heex": "html"
+  // },
+  // "files.associations": {
+  //     "*.html.heex": "phoenix-heex"
+  // }
+}
